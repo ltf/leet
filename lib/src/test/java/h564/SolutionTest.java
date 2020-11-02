@@ -20,8 +20,20 @@ import static org.junit.Assert.*;
  如果有多个结果，返回最小的那个。
  */
 public class SolutionTest {
+    Solution solution = new Solution();
 
     @Test
     public void nearestPalindromic() {
+        assertEquals("121", solution.nearestPalindromic("123"));
+    }
+
+    @Test
+    public void nearestPalindromi1c() {
+        assertEquals("0", solution.nearestPalindromic("1"));
+    }
+
+    @Test
+    public void nearestPalindromi2c() {
+        assertEquals("9", solution.nearestPalindromic("10"));
     }
 }
